@@ -1,0 +1,147 @@
+#app {
+  --color1: rgb(217 217 217 / 30%);
+  --color2: rgb(203 203 203 / 30%);
+  --textColor: #333;
+  color: #333;
+  &.simplebg {
+    background: #eee;
+  }
+}
+
+.menu-panel .menu-panel-body {
+  background: #eee;
+}
+
+.md-btn, .md-select {
+  color: var(--textColor);
+
+  &:not(.md-btn-primary) {
+    background: #eee;
+    border: 1px solid rgb(100 100 100 / 20%);
+  }
+
+  .md-ico-remove {
+    filter: invert(0.8);
+  }
+
+  .md-ico-add {
+    filter: invert(0.8);
+  }
+
+  > option, > optgroup, optgroup > option {
+    background: #eee;
+  }
+}
+
+// Only changing the CSS for the main window
+#app-main {
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 6px solid transparent;
+    box-shadow: inset 0px 0px 10px 10px rgb(20 20 20 / 50%);
+    border-radius: 16px;
+    min-height: 64px;
+    transition: border 1s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    border: 5px solid transparent;
+    box-shadow: inset 0px 0px 10px 10px rgb(10 10 10 / 80%);
+  }
+
+
+
+
+  #navigation-bar {
+    background: rgb(255 255 255 / 30%);
+    mix-blend-mode: unset;
+
+    .nav-item > svg {
+      color: var(--textColor);
+    }
+  }
+
+  .app-sidebar-item {
+    color: var(--textColor);
+
+    &.active {
+      background: rgb(0 0 0 / 10%)
+    }
+
+    .sidebar-icon > svg {
+      color: var(--textColor);
+    }
+  }
+
+
+
+  .mediaitem-card {
+    .subtitle {
+      color: #eee;
+    }
+  }
+
+  .playback-button,.playback-button--small,.volume-button--small, .app-chrome-item>input[type="range"] {
+    filter: invert(1);
+  }
+
+  #window-controls-container {
+    filter: invert(1);
+  }
+
+  .app-chrome .app-chrome-item > .app-mainmenu {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  .search-input-container {
+    .search-input--icon {
+      filter: invert(1);
+      z-index: 1;
+    }
+    .search-input {
+      color: var(--textColor);
+      background: #eee;
+      mix-blend-mode: unset;
+      filter: unset;
+    }
+  }
+
+  .artist-page {
+    .artist-title {
+      color: var(--textColor);
+    }
+
+    .floating-header {
+      background: #eee9;
+      color: var(--textColor);
+    }
+  }
+
+  .playlist-page {
+    .floating-header {
+      background: #eee9;
+      color: var(--textColor);
+    }
+  }
+
+
+  .app-drawer {
+    background: #eee;
+    color: var(--textColor);
+  }
+
+  .lyric-line {
+    color: #333;
+  }
+  .infinity {
+    filter: invert(0.8);
+  }
+
+  .playlist-page.inline-playlist .playlist-inner {
+    background: #eee;
+
+    .floating-header {
+      background: #eee;
+    }
+  }
+}
